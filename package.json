@@ -27,6 +27,10 @@
     "url": "https://github.com/taratimmerman/amazon-clone-backend/issues"
   },
   "homepage": "https://github.com/taratimmerman/amazon-clone-backend#readme",
+  "engines": {
+    "node": "14.15.4",
+    "npm": "6.14.11"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "cross-env": "^7.0.3",
