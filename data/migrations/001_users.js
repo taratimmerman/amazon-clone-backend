@@ -12,6 +12,7 @@ exports.up = function(knex) {
                 ])
                 .notNullable()
                 .defaultsTo('visitor');
+            table.string('city', 30);
             table.timestamps(true, true);
         });
 };
