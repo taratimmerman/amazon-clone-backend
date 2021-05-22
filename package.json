@@ -6,7 +6,15 @@
   "scripts": {
     "start": "node index.js",
     "server": "nodemon index.js",
-    "test": "jest"
+    "test": "jest",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run",
+    "migrateh": "heroku run knex migrate:latest -a amazon-clone-backend-tara",
+    "rollbackh": "heroku run knex migrate:rollback -a amazon-clone-backend-tara",
+    "databaseh": "heroku pg:psql -a amazon-clone-backend-tara",
+    "seedh": "heroku run knex seed:run -a amazon-clone-backend-tara",
+    "deploy": "git push heroku main"
   },
   "repository": {
     "type": "git",
@@ -24,7 +32,9 @@
     "cross-env": "^7.0.3",
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
-    "helmet": "^4.6.0"
+    "helmet": "^4.6.0",
+    "knex": "^0.95.6",
+    "pg": "^8.6.0"
   },
   "devDependencies": {
     "eslint": "^7.27.0",
