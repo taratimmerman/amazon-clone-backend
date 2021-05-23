@@ -2,15 +2,15 @@ require('dotenv').config();
 
 const users = [
   {
-    email: 'adam_admin@gmail.com',
-    name: 'Adam',
+    email: 'addie_admin@gmail.com',
+    name: 'Addie',
     password: 'admin123',
     role: 'administrator',
     city: 'Salt Lake City'
   },
   {
-    email: 'victor_visitor@gmail.com',
-    name: 'Victor',
+    email: 'vicky_visitor@gmail.com',
+    name: 'Vicky',
     password: 'visitor123',
     role: 'visitor',
     city: 'West Valley City'
