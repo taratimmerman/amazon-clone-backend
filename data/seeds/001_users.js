@@ -1,15 +1,13 @@
-require('dotenv').config();
-
 const users = [
   {
-    email: 'tara_admin@gmail.com',
-    name: 'Tara',
-    password: process.env.ADMIN_PASSWORD,
+    email: 'arnold_admin@gmail.com',
+    name: 'Arnold',
+    password: 'admin123',
     role: 'administrator'
   },
   {
-    email: 'victor_visitor@gmail.com',
-    name: 'Victor',
+    email: 'violet_visitor@gmail.com',
+    name: 'Violet',
     password: 'visitor123',
     role: 'visitor'
   }
